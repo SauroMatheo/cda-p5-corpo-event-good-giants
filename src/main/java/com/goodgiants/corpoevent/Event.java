@@ -1,6 +1,8 @@
 package com.goodgiants.corpoevent;
 
 import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Event {
     int id;
@@ -9,6 +11,8 @@ public class Event {
     String description;
     LocalDateTime dateTime;
     LocalDateTime endDateTime;
+
+    List<Comment> comments;
 
     public Event(int id, String location, String name, String description, LocalDateTime dateTime, LocalDateTime endDateTime) {
         if (dateTime.isAfter(endDateTime)) {
@@ -20,6 +24,8 @@ public class Event {
         this.description = description;
         this.dateTime = dateTime;
         this.endDateTime = endDateTime;
+
+        this.comments = new ArrayList<>();
     }
 
 
@@ -46,6 +52,10 @@ public class Event {
 
     public LocalDateTime getEndDateTime() {
         return this.endDateTime;
+    }
+
+    public List<Comment> getComments() {
+        return this.comments;
     }
 
 
