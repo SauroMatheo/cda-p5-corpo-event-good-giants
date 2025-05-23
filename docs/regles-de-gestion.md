@@ -10,7 +10,7 @@ RG 03: Un évènement peut avoir une description
 
 RG 04: Un évènement doit avoir une date et heure
 
-RG 05: Un évènement doit avoir une durée
+RG 05: Un évènement doit avoir une date et heure de fin
 
 RG 06: Un évènement peut avoir des commentaires de collaborateurs
 
