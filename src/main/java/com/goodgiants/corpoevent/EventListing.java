@@ -5,7 +5,7 @@ import java.util.List;
 
 public class EventListing {
     List<Event> events;
-    
+
 
     public List<Event> getEvents() {
         // TODO: Implement
