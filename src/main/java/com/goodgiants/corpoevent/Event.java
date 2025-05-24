@@ -28,6 +28,10 @@ public class Event {
         this.comments = new ArrayList<>();
     }
 
+    public Event() {
+        this.comments = new ArrayList<>();
+    }
+
 
     // Getters
     public int getId() {
