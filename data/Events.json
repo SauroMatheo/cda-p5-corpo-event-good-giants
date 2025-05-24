@@ -1,0 +1,25 @@
+[ {
+  "id" : 103,
+  "location" : "Paris",
+  "name" : "Good Giants Meetup",
+  "description" : "Networking event for Good Giants",
+  "dateTime" : [ 2025, 6, 10, 18, 0 ],
+  "endDateTime" : [ 2025, 6, 10, 21, 0 ],
+  "comments" : [ ]
+}, {
+  "id" : 104,
+  "location" : "Paris 3.0",
+  "name" : "Good Giants Meetup",
+  "description" : "Networking event for Good Giants",
+  "dateTime" : [ 2025, 6, 10, 18, 0 ],
+  "endDateTime" : [ 2025, 6, 10, 21, 0 ],
+  "comments" : [ ]
+}, {
+  "id" : 105,
+  "location" : "Paris 2.0",
+  "name" : "Good Giants Meetup",
+  "description" : "Networking event for Good Giants",
+  "dateTime" : [ 2025, 6, 10, 18, 0 ],
+  "endDateTime" : [ 2025, 6, 10, 21, 0 ],
+  "comments" : [ ]
+} ]
