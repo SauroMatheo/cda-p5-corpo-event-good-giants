@@ -77,14 +77,14 @@ public class Event {
     }
 
     public void setDateTime(LocalDateTime dateTime) {
-        if (dateTime.isAfter(endDateTime)) {
+        if (dateTime != null && endDateTime != null && dateTime.isAfter(endDateTime)) {
             throw new IllegalArgumentException("The start of the event would happen after its end.");
         }
         this.dateTime = dateTime;
     }
 
     public void setEndDateTime(LocalDateTime endDateTime) {
-        if (endDateTime.isBefore(dateTime)) {
+        if (endDateTime != null && dateTime != null && endDateTime.isBefore(dateTime)) {
             throw new IllegalArgumentException("The end of the event would happen before its beginning.");
         }
         this.endDateTime = endDateTime;

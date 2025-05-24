@@ -3,7 +3,7 @@ package com.goodgiants.corpoevent;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import java.io.InputStream;
-
+import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
 
 import java.io.File;
 import java.io.IOException;
@@ -16,7 +16,12 @@ public class EventHandler {
     private List<Event> events;
 
     public EventHandler() {
+        mapper.registerModule(new JavaTimeModule());
         loadEvents();
+    }
+
+    public List<Event> getEvents() {
+        return new ArrayList<>(events); // Defensive copy
     }
 
     private void loadEvents() {
@@ -47,7 +52,6 @@ public class EventHandler {
 
     private void saveEvents() {
         try {
-            // Save to external writable file
             mapper.writerWithDefaultPrettyPrinter().writeValue(externalFile, events);
         } catch (IOException e) {
             e.printStackTrace();
@@ -55,9 +59,33 @@ public class EventHandler {
     }
 
     public void addEvent(Event event) {
-        events.add(event);
-        saveEvents();
+        try {
+            // Find max id
+            int maxId = events.stream()
+                    .mapToInt(Event::getId)
+                    .max()
+                    .orElse(0); // If empty list, start from 0
+
+            // Create a new Event with a new ID but other fields from `event`
+            Event eventWithId = new Event(
+                    maxId + 1,
+                    event.getLocation(),
+                    event.getName(),
+                    event.getDescription(),
+                    event.getDateTime(),
+                    event.getEndDateTime()
+            );
+
+            events.add(eventWithId);
+            saveEvents();
+            System.out.println("addEvent test passed!");
+        } catch (Exception e) {
+            System.out.println("addEvent test failed.");
+            e.printStackTrace();
+        }
     }
+
+
 
     public void updateEvent(Event event) {
         boolean found = false;
