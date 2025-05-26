@@ -1,0 +1,82 @@
+[
+  {
+    "id": "3f7d1c8d-8f8a-4e3c-9384-184c0c42b10a",
+    "name": "Alice",
+    "lastName": "Durand",
+    "email": "alice.durand@example.com",
+    "admin": false,
+    "comments": []
+  },
+  {
+    "id": "14cf6e5c-1781-45b0-9451-d2f96b31707e",
+    "name": "Bob",
+    "lastName": "Martin",
+    "email": "bob.martin@example.com",
+    "admin": false,
+    "comments": []
+  },
+  {
+    "id": "a92cb00a-3675-4c3e-b0ec-3d8a5e2739c2",
+    "name": "Chloé",
+    "lastName": "Dupuis",
+    "email": "chloe.dupuis@example.com",
+    "admin": true,
+    "comments": []
+  },
+  {
+    "id": "275f8f83-4bd8-4c52-b6a6-b93d66c4e181",
+    "name": "David",
+    "lastName": "Lemoine",
+    "email": "david.lemoine@example.com",
+    "admin": false,
+    "comments": []
+  },
+  {
+    "id": "5ad2bc8b-c3d4-4e84-9348-bd25f7b1ae6a",
+    "name": "Emma",
+    "lastName": "Bernard",
+    "email": "emma.bernard@example.com",
+    "admin": false,
+    "comments": []
+  },
+  {
+    "id": "bc90fc68-770e-48b3-90f4-2a2cce9d3f1e",
+    "name": "Fabien",
+    "lastName": "Rolland",
+    "email": "fabien.rolland@example.com",
+    "admin": false,
+    "comments": []
+  },
+  {
+    "id": "c3a69c7f-0213-41b2-a229-6c0c010c779e",
+    "name": "Gabriel",
+    "lastName": "Meunier",
+    "email": "gabriel.meunier@example.com",
+    "admin": true,
+    "comments": []
+  },
+  {
+    "id": "00ad2d97-f06f-4c99-9cb4-7e53bde43254",
+    "name": "Hélène",
+    "lastName": "Petit",
+    "email": "helene.petit@example.com",
+    "admin": false,
+    "comments": []
+  },
+  {
+    "id": "16e78cbf-b7a1-4c79-a206-48ac3d236823",
+    "name": "Ibrahim",
+    "lastName": "Sow",
+    "email": "ibrahim.sow@example.com",
+    "admin": false,
+    "comments": []
+  },
+  {
+    "id": "0ceee4aa-780b-4c56-b939-2d3b9b187176",
+    "name": "Julie",
+    "lastName": "Noël",
+    "email": "julie.noel@example.com",
+    "admin": false,
+    "comments": []
+  }
+]
